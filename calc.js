@@ -59,5 +59,5 @@ calcButton.addEventListener('click', function() {
   let oneGridProfit = (gridsArray[1] - gridsArray[0]) * quantity - oneTradeFee;
 
   gridValues.innerText = gridsArray;
-  oneGridsProfit.innerText = oneGridProfit;
+  oneGridsProfit.innerText = parseFloat(oneGridProfit.toFixed(precision));
 });
