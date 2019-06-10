@@ -1,38 +1,51 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     <title>Grid Trade Calculator</title>
   </head>
-
   <body>
-    <h1 id="title">Grid Trade Calculator</h1>
+    <div class="container-fluid">
+        <div class="col">
+            <div class="text-center div-center">
+      <h1 id="title">Grid Trade Calculator</h1>
 
 
-    <h3>Fill in the fields of your grid trade</h3> 
-    <input type="number" id="domHighPrice" value="" placeholder="High Price"> <br><br>
-    <input type="number" id="domLowPrice" value="" placeholder="Low Price"> <br><br>
-    <input type="number" id="domQtyPerGrid" value="" placeholder="Per Grid Qty"> <br><br>
-    <input type="number" id="domTradingFee" value="" placeholder="Trading Fee in Decimal"> <br><br>
-    <input type="number" id="domGridAmmt" value="" placeholder="Ammt of Grids"> <br><br>
-    <input type="number" id="domPrecision" value="" placeholder="Precision"> <br><br>
+       <h3>Fill in the fields of your grid trade</h3> 
+        <input type="number" id="domHighPrice" value="" placeholder="High Price"> <br><br>
+        <input type="number" id="domLowPrice" value="" placeholder="Low Price"> <br><br>
+        <input type="number" id="domQtyPerGrid" value="" placeholder="Per Grid Qty"> <br><br>
+        <input type="number" id="domTradingFee" value="" placeholder="Trading Fee in Decimal"> <br><br>
+        <input type="number" id="domGridAmmt" value="" placeholder="Ammt of Grids"> <br><br>
+        <input type="number" id="domPrecision" value="" placeholder="Precision"> <br><br>
 
     <button id="calcButton">Calculate It</button>
-
-    <h2>Grid Trade Info</h2>
+  </div>
+  
+  <div class="container-fluid"></div>
+  <div class="col">
+      <div class="text-center div-center">
+    <h2><u><b>Grid Trade Info</b></u></h2>
     <h3>Grid Prices</h3>
+    <div class="col-sm-8">
     <p id="gridValues"></p>
+  </div>
     <br>
     <h3>Per Grid Profit</h3>
     <p id="oneGridsProfit"></p>
-
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="calc.js"></script>
-    
   </body>
-
-  <footer>
-    <p>Made by <a href="https://twitter.com/skumbagt">afmsavage</a></p>
-  </footer>
-
 </html>
