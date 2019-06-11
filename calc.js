@@ -40,7 +40,7 @@ const findGridPrices = (highPrice, lowPrice, gridsAmmt, precision) => {
 
 // figure out the fee for one side of the trade
 const findTradeFee = (fee, quantity, price) => {
-  feeTotal = (quantity * price) * fee;
+  feeTotal = (quantity * price) * (fee / 100);
   oneTradeFee = feeTotal.toFixed(precision);
 };
 
