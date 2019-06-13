@@ -1,5 +1,5 @@
 body {
-    background-color: #2f68e2;
+    background-color:#001f3f;
   }
   input {
     font-family: Arial;
@@ -7,9 +7,12 @@ body {
     padding: 1px 0;
     font-size: 18px;
   }
+  a {
+    color: #01FF70;
+  }
   h1 {
     font-family: Arial;
-    color: #ffffff;
+    color: #FF851B;
     align-content: center;
     margin: auto;
     padding: 8px 0;
@@ -17,7 +20,7 @@ body {
   }
   h2 {
     font-family: Arial;
-    color: #333333;
+    color: #DDDDDD;
     align-content: center;
     margin: auto;
     padding: 8px 0;
@@ -25,14 +28,22 @@ body {
   }
   h3 {
     font-family: Arial;
-    color: #ffffff;
+    color: #DDDDDD;
     align-content: center;
     margin: auto;
     padding: 8px 0;
     font-size: 21px;
   }
   p {
-    color: #ffffff;
+    color: #7FDBFF;
+    font-size: 18px;
+    font-family: Arial;
+    align-content: center;
+    margin: auto;
+    padding: 3px 0;
+  }
+  #oneGridsProfit {
+    color: #2ECC40;
     font-size: 18px;
     font-family: Arial;
     align-content: center;
@@ -41,14 +52,14 @@ body {
   }
   button {
     font-family: Arial;
-    background-color: #2b2e33; /* Green */
-    border: 3px solid #fbfcfd;
+    background-color: #2b2e33;
+    border: 3px solid #FF851B;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 24px;
     align-content: center;
     margin: auto;
     padding: 10px 2;
