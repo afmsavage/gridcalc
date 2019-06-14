@@ -45,7 +45,11 @@ const findTradeFee = (fee, quantity, price) => {
 };
 
 calcButton.addEventListener('click', function() {
- 
+  
+  // clear the results area before displaying results for multiple calcs w/o reload
+  gridValues.innerTest = '';
+  oneGridsProfit.innerText = ''; 
+
   highPrice = domHighPrice.value;
   lowPrice = domLowPrice.value;
   quantity = domQtyPerGrid.value;
