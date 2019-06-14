@@ -49,6 +49,7 @@ calcButton.addEventListener('click', function() {
   // clear the results area before displaying results for multiple calcs w/o reload
   gridValues.innerTest = '';
   oneGridsProfit.innerText = ''; 
+  gridsArray = [];
 
   highPrice = domHighPrice.value;
   lowPrice = domLowPrice.value;
@@ -62,6 +63,13 @@ calcButton.addEventListener('click', function() {
 
   let oneGridProfit = (gridsArray[1] - gridsArray[0]) * quantity - oneTradeFee;
 
-  gridValues.innerText = gridsArray;
+  gridsArray.forEach(function(aGrid) {
+    const newArrayItem = document.createElement('li');
+    newArrayItem.innerHTML = aGrid;
+    gridValues.appendChild(newArrayItem);
+  });
+  // gridValues.innerText = gridsArray;
   oneGridsProfit.innerText = parseFloat(oneGridProfit.toFixed(precision));
 });
+
+

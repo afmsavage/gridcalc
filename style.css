@@ -64,8 +64,22 @@ body {
     margin: auto;
     padding: 10px 2;
   }
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-   }
+
+  button:hover {
+    background-color: #FF851B;
+    border: 3px solid #2b2e33;
+    color: black
+  }
+  li {
+    margin-bottom: 5px;
+    color: #2ECC40;
+    list-style-type: none
+  }
+/* NOTE: Can include this to split grids into two columns
+   ul li{
+    float: left;
+    width: 25%; 
+}
+ul{
+    list-style-type: disc;
+} */
