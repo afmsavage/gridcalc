@@ -47,7 +47,7 @@ const findTradeFee = (fee, quantity, price) => {
 calcButton.addEventListener('click', function() {
   
   // clear the results area before displaying results for multiple calcs w/o reload
-  gridValues.innerTest = '';
+  gridValues.innerText = '';
   oneGridsProfit.innerText = ''; 
   gridsArray = [];
 
